@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    height: 5rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,11 +22,26 @@ header {
 
     font-size: 3rem;
     text-align: center;
+
+    section {
+        margin-top: 2rem;
+        font-size: 3rem;
+        width: 90%;
+    }
 }
 
 #myAds {
+    margin-top: 20px;
     width: 100%;
-    min-height: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.adsbygoogle {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 100px;
 }
 
 main {
@@ -247,6 +262,7 @@ footer {
     width: 100%;
     height: 5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
