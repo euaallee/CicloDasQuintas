@@ -1,3 +1,15 @@
+const adContainer = document.getElementById("meu-anuncio");
+adContainer.innerHTML = ""; // limpa o anterior
+
+const ad = document.createElement("ins");
+ad.className = "adsbygoogle";
+ad.style.display = "block";
+ad.setAttribute("data-ad-client", "ca-pub-7246422966217785");
+ad.setAttribute("data-ad-slot", "1234567890");
+
+adContainer.appendChild(ad);
+(adsbygoogle = window.adsbygoogle || []).push({});
+
 const main = document.querySelector("main")
 const ciclo = document.querySelector("#ciclo")
 const seletor = document.querySelector(".seletor")
