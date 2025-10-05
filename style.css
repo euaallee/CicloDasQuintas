@@ -24,6 +24,11 @@ header {
     text-align: center;
 }
 
+#myAds {
+    width: 100%;
+    min-height: 12rem;
+}
+
 main {
     min-width: 100%;
     min-height: 100vh;
@@ -220,11 +225,11 @@ main {
             height: 35rem;
 
             border: solid 1rem black;
-            
+
             .Maiores {
                 /* transform: scale(0.5); */
 
-                .Cifra{
+                .Cifra {
                     font-size: 3.5rem;
                 }
 
@@ -236,12 +241,6 @@ main {
             }
         }
     }
-}
-
-.ads {
-    position: relative;
-    top: 0;
-    width: 100%;
 }
 
 footer {

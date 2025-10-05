@@ -1,4 +1,4 @@
-const adContainer = document.getElementById("meu-anuncio");
+const adContainer = document.getElementById("myAds");
 adContainer.innerHTML = ""; // limpa o anterior
 
 const ad = document.createElement("ins");
