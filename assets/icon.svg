@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+    <!-- background -->
+    <rect width="100%" height="100%" fill="none" />
+
+    <!-- mask: white = keep, black = cut away -->
+    <mask id="cutMask">
+        <rect x="0" y="0" width="600" height="600" fill="white" />
+
+        <circle cx="435" cy="540" r="85" fill="black" />
+
+        <circle cx="300" cy="0" r="210" fill="black" />
+
+        <circle cx="300" cy="300" r="155" fill="white" />
+    </mask>
+
+    <!-- main big circle, applied mask to remove parts -->
+    <g mask="url(#cutMask)">
+        <circle cx="300" cy="300" r="300" fill="black" />
+    </g>
+</svg>

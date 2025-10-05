@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+/* body {
+    overflow-x: hidden;
+} */
+
+header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .seletor {
+        width: 60rem;
+        height: 60rem;
+        border-radius: 30rem;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+
+        .degrees-2 {
+            transform: rotate(-30deg);
+        }
+
+        .degrees-3 {
+            transform: rotate(30deg);
+        }
+
+        .degrees-4 {
+            transform: rotate(-30deg);
+        }
+
+        .degrees-5 {
+            transform: rotate(30deg);
+        }
+
+        /* .degrees-6 {} */
+
+        .degrees-7 {
+            transform: rotate(-30deg);
+        }
+
+        tspan {
+            font: bold 4rem sans-serif;
+            fill: #fff;
+        }
+    }
+
+    .Ciclo {
+        width: 60rem;
+        height: 60rem;
+        background-color: #f0f8ff;
+        border-radius: 30rem;
+        border: solid 1.5rem black;
+        position: relative;
+        overflow: hidden;
+
+        transition: transform 0.3s ease;
+
+        .Maiores {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Cifra {
+                font-size: 7rem;
+                font-weight: 600;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: .5rem;
+                /* background-color: blue; */
+            }
+
+            .Maior-C {
+                transform: rotate(0deg);
+            }
+
+            .Maior-G {
+                transform: rotate(30deg);
+            }
+
+            .Maior-D {
+                transform: rotate(60deg);
+            }
+
+            .Maior-A {
+                transform: rotate(90deg);
+            }
+
+            .Maior-E {
+                transform: rotate(120deg);
+            }
+
+            .Maior-B {
+                transform: rotate(150deg);
+            }
+
+            .Maior-Gb {
+                transform: rotate(180deg);
+            }
+
+            .Maior-Db {
+                transform: rotate(210deg);
+            }
+
+            .Maior-Ab {
+                transform: rotate(240deg);
+            }
+
+            .Maior-Eb {
+                transform: rotate(270deg);
+            }
+
+            .Maior-Bb {
+                transform: rotate(300deg);
+            }
+
+            .Maior-F {
+                transform: rotate(330deg);
+            }
+
+            .Menores {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(-90deg);
+
+                .Cifra {
+                    font-size: 3.5rem;
+                    width: 70%;
+                    height: 70%;
+                }
+
+                .Menor-Cm {
+                    transform: rotate(0deg);
+                }
+
+                .Menor-Gm {
+                    transform: rotate(30deg);
+                }
+
+                .Menor-Dm {
+                    transform: rotate(60deg);
+                }
+
+                .Menor-Am {
+                    transform: rotate(90deg);
+                }
+
+                .Menor-Em {
+                    transform: rotate(120deg);
+                }
+
+                .Menor-Bm {
+                    transform: rotate(150deg);
+                }
+
+                .Menor-Gbm {
+                    transform: rotate(180deg);
+                }
+
+                .Menor-Dbm {
+                    transform: rotate(210deg);
+                }
+
+                .Menor-Abm {
+                    transform: rotate(240deg);
+                }
+
+                .Menor-Ebm {
+                    transform: rotate(270deg);
+                }
+
+                .Menor-Bbm {
+                    transform: rotate(300deg);
+                }
+
+                .Menor-Fm {
+                    transform: rotate(330deg);
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 430px) {
+        .seletor {
+            transform: scale(0.58);
+        }
+
+        .Ciclo {
+            width: 35rem;
+            height: 35rem;
+
+            border: solid 1rem black;
+            
+            .Maiores {
+                /* transform: scale(0.5); */
+
+                .Cifra{
+                    font-size: 3.5rem;
+                }
+
+                .Menores {
+                    .Cifra {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+    text-align: center;
+
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #0676d1;
+    }
+}

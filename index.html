@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Título e descrição (aparecem no Google) -->
+    <title>Ciclo das Quintas — Aprenda o Círculo de Quintas de forma interativa</title>
+    <meta name="description"
+        content="Explore o Ciclo das Quintas de forma visual e interativa. Descubra acordes maiores e menores, entenda tonalidades e aprenda harmonia musical com facilidade.">
+
+    <!-- ✅ Palavras-chave -->
+    <meta name="keywords"
+        content="ciclo das quintas, círculo das quintas, teoria musical, acordes, harmonia, campo harmônico, escalas musicais">
+
+    <!-- ✅ Autor -->
+    <meta name="author" content="Alexander Joshua Lima Pereira">
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" type="image/png" href="./assets/icon.svg">
+
+    <!-- ✅ Arquivos -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- ✅ Estrutura semântica para SEO -->
+    <meta property="og:title" content="Ciclo das Quintas Interativo">
+    <meta property="og:description" content="Aprenda teoria musical de forma visual com o Ciclo das Quintas.">
+    <meta property="og:image" content="https://euaallee.github.io/CicloDasQuintas/preview.png">
+    <meta property="og:url" content="https://euaallee.github.io/CicloDasQuintas">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ✅ Google AdSense (substitua pelo seu ID) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7246422966217785"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ciclo das Quintas — Ferramenta Interativa</h1>
+        <p>Entenda o círculo de quintas, acorde por acorde, com um painel interativo simples e prático.</p>
+    </header>
+
+    <main>
+
+        <div class="seletor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+                <!-- background -->
+                <rect width="100%" height="100%" fill="none" />
+
+                <!-- mask: white = keep, black = cut away -->
+                <mask id="cutMask">
+                    <rect x="0" y="0" width="600" height="600" fill="white" />
+
+                    <circle cx="435" cy="540" r="85" fill="black" />
+
+                    <circle cx="300" cy="0" r="210" fill="black" />
+
+                    <circle cx="300" cy="300" r="155" fill="white" />
+                </mask>
+
+                <!-- main big circle, applied mask to remove parts -->
+                <g mask="url(#cutMask)">
+                    <circle cx="300" cy="300" r="300" fill="black" />
+                </g>
+
+                <!-- Text / labels like degrees (editable) -->
+                <text x="95" y="295" class="degrees-2">
+                    <tspan>2°</tspan>
+                </text>
+
+                <text x="395" y="0" class="degrees-3">
+                    <tspan>3°</tspan>
+                </text>
+
+                <text x="10" y="190" class="degrees-4">
+                    <tspan>4°</tspan>
+                </text>
+
+                <text x="470" y="-100" class="degrees-5">
+                    <tspan>5°</tspan>
+                </text>
+
+                <text x="285" y="190" class="degrees-6">
+                    <tspan>6°</tspan>
+                </text>
+
+                <text x="45" y="590" class="degrees-7">
+                    <tspan>7° Dim</tspan>
+                </text>
+            </svg>
+        </div>
+
+        <div class="Ciclo" id="ciclo">
+            <div class="Maiores">
+                <div class="Cifra Maior-C">C</div>
+                <div class="Cifra Maior-G">G</div>
+                <div class="Cifra Maior-D">D</div>
+                <div class="Cifra Maior-A">A</div>
+                <div class="Cifra Maior-E">E</div>
+                <div class="Cifra Maior-B">B</div>
+                <div class="Cifra Maior-Gb">F#</div>
+                <div class="Cifra Maior-Db">C#</div>
+                <div class="Cifra Maior-Ab">G#</div>
+                <div class="Cifra Maior-Eb">D#</div>
+                <div class="Cifra Maior-Bb">A#</div>
+                <div class="Cifra Maior-F">F</div>
+
+                <div class="Menores">
+                    <div class="Cifra Menor-Cm">Cm</div>
+                    <div class="Cifra Menor-Gm">Gm</div>
+                    <div class="Cifra Menor-Dm">Dm</div>
+                    <div class="Cifra Menor-Am">Am</div>
+                    <div class="Cifra Menor-Em">Em</div>
+                    <div class="Cifra Menor-Bm">Bm</div>
+                    <div class="Cifra Menor-Gbm">F#m</div>
+                    <div class="Cifra Menor-Dbm">C#m</div>
+                    <div class="Cifra Menor-Abm">G#m</div>
+                    <div class="Cifra Menor-Ebm">D#m</div>
+                    <div class="Cifra Menor-Bbm">A#m</div>
+                    <div class="Cifra Menor-Fm">Fm</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="ads">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7246422966217785"
+                data-ad-slot="7598656207" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ciclo das Quintas — Desenvolvido por <a href="https://instagram.com/euaallee">@euaallee</a></p>
+    </footer>
+</body>
+
+</html>
